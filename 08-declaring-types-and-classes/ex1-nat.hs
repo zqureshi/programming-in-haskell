@@ -15,5 +15,4 @@ add (Succ m) n = Succ (add m n)
 
 mult :: Nat -> Nat -> Nat
 mult n Zero = Zero
-mult n (Succ Zero) = n
 mult n (Succ m) = add n (mult n m)
